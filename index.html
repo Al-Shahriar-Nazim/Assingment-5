@@ -106,7 +106,7 @@
             Traveling opens up a world of adventure, discovery, and cultural
             immersion. It's about stepping out of your comfort zone.
           </p>
-          <button
+          <button onclick="buyTicketSection()"
             class="btn-primary text-black rounded-md mx-auto flex items-center mt-[5px] lg:mt-[80px] font-semibold lg:font-extrabold text-[16px] lg:text-[20px] px-1 lg:px-3 py-0.5 lg:py-3 bg-[#1DD100] border-none"
           >
             Buy Tickets
@@ -162,13 +162,13 @@
       </section>
 
       <!-- main-tickit-section -->
-      <section class=" mt-[50px] lg:mt-[120px]">
+      <section id="seatSection" class=" mt-[50px] lg:mt-[120px] border-t-2 rounded-3xl border-[#1DD100]">
         <!-- tickit content -->
         <div class="text-center">
           <h2 class="text-[#030712] font-bold raleway-font text-[20px] lg:text-[40px] ">ASN-Poribahan</h2>
           <p class=" w-[95%] lg:w-[50%] inter-font text-[18px] text-[#03071299] mx-auto mt-3 lg:mt-6"> It refers to the various modes of transportation available for commuting or traveling from one place to another, encompassing options such as buses, trains, taxis, rickshaws, boats, and more.</p>
         </div>
-    <section class="flex items-center bg-white rounded-3xl mt-12">
+    <section class="flex flex-col lg:flex-row items-center bg-white rounded-3xl mt-12">
         <div class="flex-1 p-8">
           <div class="flex items-center justify-between mb-9">
             <div class="flex justify-center items-center gap-4">
@@ -217,188 +217,679 @@
         </div>
       </section>
 
+
+
+
       <!-- seat section -->
-      <section class="flex mt-[70px] bg-[#F7F8F8] p-[32px]">
-
-        <div class="w-[65%]">
-<h1 class="raleway-font text-[24px] font-semibold">Select Your Seat</h1>
-<div class="w-auto border border-dashed border-b-2 border-fill "></div>
-
-<div class="flex justify-between mb-[19px]">
-    <div class="mt-[19px] text-[#03071280] font-medium">
-        <h1 class="flex inter-font  text-[18px]">
-            <span class="mr-2"><img src="images/seat-gray.png" alt=""></span>
-            Available
-        </h1>
-    </div>
-
-    <div class="mt-[19px] text-[#03071280] font-medium">
-        <h1 class="flex inter-font  text-[18px] text-[#1DD100]">
-            <span class="mr-2"><img src="images/seat-green-filled.png" alt=""></span>
-            Selected
-        </h1>
-    </div>
-
-
-</div>
-<div class="w-auto border border-dashed border-b-2 border-fill "></div>
-<!-- wheel part-->
-<div class="flex justify-end ">
-    <div class="mt-[24px]  bg-[#0307121A] p-4 w-[110px] h-[60px] flex justify-center mb-6 ">
-        <img src="images/steering-wheel.png" class="h-[24px] w-[24px]"  alt="">
-    </div>
-</div>
-
-<div class="bg-[#FFFFFF] p-[20px]">
-    <!-- serial A -->
-<div class="mt-6 inter-font text-[18px] leading-6 flex gap-6 justify-evenly w-full mb-[24px]">
-    <div class="py-[20px] px-[40px] rounded-xl ">A</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl " >A1</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">A2</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">A3</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl">A4</div>
-</div>
-<!-- serial B-->
-<div class="mt-6 inter-font text-[18px] leading-6 flex gap-6 justify-evenly w-full mb-[24px]">
-    <div class="py-[20px] px-[40px] rounded-xl ">B</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl " >B1</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">B2</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">B3</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl">B4</div>
-</div>
-<!-- serial c -->
-<div class="mt-6 inter-font text-[18px] leading-6 flex gap-6 justify-evenly w-full mb-[24px]">
-    <div class="py-[20px] px-[40px] rounded-xl ">C</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl " >C1</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">C2</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">C3</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl">C4</div>
-</div>
-<!-- serial D-->
-<div class="mt-6 inter-font text-[18px] leading-6 flex gap-6 justify-evenly w-full mb-[24px]">
-    <div class="py-[20px] px-[40px] rounded-xl ">D</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl " >D1</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">D2</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">D3</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl">D4</div>
-</div>
-<!-- serial E-->
-<div class="mt-6 inter-font text-[18px] leading-6 flex gap-6 justify-evenly w-full mb-[24px]">
-    <div class="py-[20px] px-[40px] rounded-xl ">E</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl " >E1</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">E2</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">E3</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl">E4</div>
-</div>
-<!-- serial F -->
-<div class="mt-6 inter-font text-[18px] leading-6 flex gap-6 justify-evenly w-full mb-[24px]">
-    <div class="py-[20px] px-[40px] rounded-xl ">F</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl " >F1</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">F2</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">F3</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl">F4</div>
-</div>
-<!-- serial G -->
-<div class="mt-6 inter-font text-[18px] leading-6 flex gap-6 justify-evenly w-full mb-[24px]">
-    <div class="py-[20px] px-[40px] rounded-xl ">G</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl " >G1</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">G2</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">G3</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl">G4</div>
-</div>
-<!-- serial H -->
-<div class="mt-6 inter-font text-[18px] leading-6 flex gap-6 justify-evenly w-full mb-[24px]">
-    <div class="py-[20px] px-[40px] rounded-xl ">H</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl " >H1</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">H2</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">H3</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl">H4</div>
-</div>
-<!-- serial I -->
-<div class="mt-6 inter-font text-[18px] leading-6 flex gap-6 justify-evenly w-full mb-[24px]">
-    <div class="py-[20px] px-[40px] rounded-xl ">I</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl " >I1</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">I2</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">I3</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl">I4</div>
-</div>
-<!-- serial J -->
-<div class="mt-6 inter-font text-[18px] leading-6 flex gap-6 justify-evenly w-full mb-[24px]">
-    <div class="py-[20px] px-[40px] rounded-xl ">J</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl " >J1</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">J2</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl ">J3</div>
-    <div class="bg-[#F7F8F8] py-[20px] px-[40px] rounded-xl">J4</div>
-</div>
-</div>
-</div>
+      <section
+      class="bg-white rounded-3xl p-1 lg:p-6 mt-5 lg:flex justify-between"
+    >
+      <!-- seat-design-section -->
+      <section class="lg:w-4/6 w-full">
+        <div class="border-dashed border-b-2">
+          <h1 class="py-3">Select Your Seat</h1>
         </div>
-        <div class="h-auto border border-dashed border-r-2 border-fill mx-4"></div>
-<!-- select your seat -->
-        <div class="w-30% ml-[4px]">
-<h1 class="raleway-font text-[24px] font-semibold">Select Your Seat</h1>
-<div class="w-auto border border-dashed border-b-2 border-fill "></div>
-<div class="inter-font ">
+        <div
+          class="border-dashed border-b-2 flex justify-between items-center"
+        >
+          <div class="lg:flex items-center gap-2 lg:py-3">
+            <img src="images/seat-gray.png" alt="" />
+            <h1 class="font-medium text-lg inter-font text-gray-300">
+              Available
+            </h1>
+          </div>
+          <div class="lg:flex items-center lg:py-3 gap-2">
+            <img src="images/seat-green-filled.png" alt="" />
+            <h1 class="color-prime font-medium text-lg inter-font">
+              selected
+            </h1>
+          </div>
+        </div>
 
-    <div class="space-y-4 flex gap-[100px] mb-6">
-        <p class="font-medium text-[16px] text-[#030712] mt-[15px]">
-            Seat
-            <span class="bg-[#1DD100] text-white p-1 rounded-3xl text-[#030712];font-bold">2</span>
-        </p>
-        <p class="font-medium text-[16px] text-[#030712]">Class</p>
-        <p class="font-medium text-[16px] text-[#030712]">Price</p>
-    </div>
-    <div class="w-auto border border-dashed border-r-2 border-fill mx-4"></div>
-    <div class="flex gap-[110px] mt-6 text-[#03071299] iner-font">
-        <p>C2</p>
-        <p>Economoy</p>
-        <p>550</p>
-    </div>
+        <!-- seat-serial-section -->
+        <section id="seat-serial-section">
+          <!-- driver -->
+          <div class="flex justify-end my-5">
+            <button disabled class="btn w-28">
+              <img src="images/steering-wheel.png" class="w-510 h-10" alt="" />
+            </button>
+          </div>
+          <!-- serial-a -->
+          <div class="flex w-full mb-5">
+            <div class="flex justify-center items-center">
+              <h1 class="items-center p-4 inter-font">A</h1>
+            </div>
+            <div
+              class="flex justify-between gap-2 lg:gap-12 items-center flex-1"
+            >
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="A1"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    A1
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="A2"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    A2
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="A3"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    A3
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="A4"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    A4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- serial-b -->
+          <div class="flex w-full mb-5">
+            <div class="flex justify-center items-center">
+              <h1 class="items-center p-4 inter-font">B</h1>
+            </div>
+            <div
+              class="flex justify-between gap-2 lg:gap-12 items-center flex-1"
+            >
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="B1"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    B1
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="B2"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    B2
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="B3"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    B3
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="B4"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    B4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- serial-c -->
+          <div class="flex w-full mb-5">
+            <div class="flex justify-center items-center">
+              <h1 class="items-center p-4 inter-font">C</h1>
+            </div>
+            <div
+              class="flex justify-between gap-2 lg:gap-12 items-center flex-1"
+            >
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="C1"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    C1
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="C2"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    C2
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="C3"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    C3
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="C4"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    C4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- serial-d -->
+          <div class="flex w-full mb-5">
+            <div class="flex justify-center items-center">
+              <h1 class="items-center p-4 inter-font">D</h1>
+            </div>
+            <div
+              class="flex justify-between gap-2 lg:gap-12 items-center flex-1"
+            >
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="D1"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    D1
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="D2"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    D2
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="D3"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    D3
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="D4"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    D4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- serial-e -->
+          <div class="flex w-full mb-5">
+            <div class="flex justify-center items-center">
+              <h1 class="items-center p-4 inter-font">E</h1>
+            </div>
+            <div
+              class="flex justify-between gap-2 lg:gap-12 items-center flex-1"
+            >
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="E1"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    E1
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="E2"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    E2
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="E3"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    E3
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="E4"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    E4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- serial-f -->
+          <div class="flex w-full mb-5">
+            <div class="flex justify-center items-center">
+              <h1 class="items-center p-4 inter-font">F</h1>
+            </div>
+            <div
+              class="flex justify-between gap-2 lg:gap-12 items-center flex-1"
+            >
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="F1"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    F1
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="F2"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    F2
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="F3"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    F3
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="F4"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    F4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- serial-g -->
+          <div class="flex w-full mb-5">
+            <div class="flex justify-center items-center">
+              <h1 class="items-center p-4 inter-font">G</h1>
+            </div>
+            <div
+              class="flex justify-between gap-2 lg:gap-12 items-center flex-1"
+            >
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="G1"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    G1
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="G2"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    G2
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="G3"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    G3
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="G4"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    G4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- serial-h -->
+          <div class="flex w-full mb-5">
+            <div class="flex justify-center items-center">
+              <h1 class="items-center p-4 inter-font">H</h1>
+            </div>
+            <div
+              class="flex justify-between gap-2 lg:gap-12 items-center flex-1"
+            >
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="H1"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    H1
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="H2"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    H2
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="H3"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    H3
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="H4"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    H4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- serial-i -->
+          <div class="flex w-full mb-5">
+            <div class="flex justify-center items-center">
+              <h1 class="items-center p-4 inter-font">I</h1>
+            </div>
+            <div
+              class="flex justify-between gap-2 lg:gap-12 items-center flex-1"
+            >
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="I1"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    I1
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="I2"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    I2
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="I3"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    I3
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="I4"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    I4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- serial-j -->
+          <div class="flex w-full mb-5">
+            <div class="flex justify-center items-center">
+              <h1 class="items-center p-4 inter-font">J</h1>
+            </div>
+            <div
+              class="flex justify-between gap-2 lg:gap-12 items-center flex-1"
+            >
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="J1"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    J1
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="J2"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    J2
+                  </button>
+                </div>
+              </div>
+              <div
+                class="w-full flex justify-between items-center gap-2 lg:gap-5"
+              >
+                <div class="w-full">
+                  <button
+                    id="J3"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    J3
+                  </button>
+                </div>
+                <div class="w-full">
+                  <button
+                    id="J4"
+                    class="btn w-full hover:bg-white hover:border-[#1dd100] inter-font"
+                  >
+                    J4
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
 
-  <div class="flex gap-[110px] mt-6 mb-6 text-[#03071299] iner-font">
-        <p>C2</p>
-        <p>Economoy</p>
-        <p>550</p>
-    </div>
-  <hr>
-    <div class="flex justify-between gap-[200px] mt-3 text-[#030712] font-medium">
-        <p>Total Price</p>
-        <p>BDT 1100</p>
-    </div>
-    <div class="mt-6 ">
-        <label class="input outline-none border-none focus:outline-none focus:border-none flex items-center gap-2 mt-3">
-            <input type="text" class="grow outline-none border-none focus:outline-none focus:border-none" placeholder="Have any coupon?">
-            <span class="badge badge-info p-4 rounded-lg bg-[#1DD100] text-white">Apply</span>
+      <div
+        class="h-auto border border-dashed border-r-2 border-fill mx-4"
+      ></div>
+
+      <!-- seat-input-section -->
+      <section class="w-full lg:w-2/6">
+        <div class="border-dashed border-b-2">
+          <h1 class="py-3">Pay Grand Total</h1>
+        </div>
+
+        <!-- price-total-card -->
+        <section class="bg-[#F7F8F8] p-2 lg:p4 mt-5 rounded-xl">
+          <div>
+            <table class="w-full text-left">
+              <thead class="border-dashed border-b-4">
+                <th class="py-1">
+                  Seat
+                  <span
+                    id="seatPurchase"
+                    class="bg-[#1DD100] text-white px-1 py-0 border-none rounded-lg"
+                    >0</span
+                  >
+                </th>
+                <th>Class</th>
+                <th class="text-right">Price</th>
+              </thead>
+              <tbody id="ticketTable" class="border-solid border-b-4">
+                <!-- Handel Dynamically with js -->
+              </tbody>
+            </table>
+            <div class="flex justify-between items-center py-2">
+              <h1 class="inter-font font-medium">Total Price:</h1>
+              <h1 class="inter-font font-medium">
+                BDT <span id="totalPrice">0</span>
+              </h1>
+            </div>
+          </div>
+          <div
+            id="discountArea"
+            class="flex justify-between items-center hidden"
+          >
+            <h2 class="inter-font font-medium">
+              You got a discount of (tk.)
+            </h2>
+            <h2 class="inter-font font-medium">
+              BDT <span id="discountMoney">0</span>
+            </h2>
+          </div>
+          <label
+            id="coupon-label"
+            class="input outline-none border-none focus:outline-none focus:border-none flex items-center lg:gap-2 mt-3"
+          >
+            <input
+              id="couponInput"
+              type="text"
+              class="grow outline-none border-none focus:outline-none focus:border-none"
+              placeholder="Have any coupon?"
+              disabled
+            />
+            <button
+              id="couponBtn"
+              class="badge badge-info p-4 rounded-lg bg-[#1DD100] text-white"
+              disabled
+            >
+              Apply
+            </button>
           </label>
-    </div>
-    <!-- from -->
-    <form action="" class="mt-9">
-        <label for="name" class="inter-font font-semibold text-base text-black">Passenger Name*
-        </label>
-        <input type="text" placeholder="Enter Your Name" class="input w-full border-gray-300 border border-solid focus:outline-none focus:border-none my-2">
-        <label for="name" class="inter-font font-semibold text-base text-black">Phone Number*
-        </label>
-        <input type="text" placeholder="Enter your Phone Number" class="input w-full border-gray-300 border border-solid focus:outline-none focus:border-none my-2">
-        <label for="name" class="inter-font font-semibold text-base text-black">Email Id*
-        </label>
-        <input type="text" placeholder="Enter your Email ID" class="input w-full border-gray-300 border border-solid focus:outline-none focus:border-none mt-2">
-        <button class="w-full bg-[#1DD100] p-3 border-none rounded-lg raleway-font font-bold text-white my-6">
-          Next
-        </button>
-      </form>
-      <!-- trams and condition -->
-      <div class="flex justify-around items-center text-[#03071299] inter-font">
-        <h2 class="underline"><a href="">Term and Conditions</a></h2>
-        <h2 class="underline"><a href="">Cancellation Policy</a></h2>
-      </div>
-</div>
+          <div class="flex justify-between items-center py-5">
+            <h1 class="inter-font font-medium">Grand total:</h1>
+            <h2 class="inter-font font-medium">
+              BDT <span id="grandTotal">0</span>
+            </h2>
+          </div>
+        </section>
+        <!-- Input-area -->
+
+        <form action="">
+          <label
+            for="name"
+            class="inter-font font-semibold text-base text-black"
+            >Passenger Name*
+          </label>
+          <input
+            required
+            id="name"
+            type="text"
+            placeholder="Enter Your Name"
+            class="input w-full border-gray-300 border border-solid focus:outline-none focus:border-none my-2"
+          />
+          <label
+            for="name"
+            class="inter-font font-semibold text-base text-black"
+            >Phone Number*
+          </label>
+          <input
+            required
+            id="PhoneNum"
+            type="tel"
+            placeholder="Enter your Phone Number"
+            class="input w-full border-gray-300 border border-solid focus:outline-none focus:border-none my-2"
+          />
+          <label
+            for="name"
+            class="inter-font font-semibold text-base text-black"
+            >Email Id*
+          </label>
+          <input
+            required
+            id="email"
+            type="email"
+            placeholder="Enter your Email ID"
+            class="input w-full border-gray-300 border border-solid focus:outline-none focus:border-none mt-2"
+          />
+          <button
+            onclick="formSubmit(event)"
+            class="w-full bg-prime p-3 rounded-lg raleway-font hover:bg-white hover:border-[#1dd100] hover:text-black hover:border font-bold text-white my-6"
+          >
+            Next
+          </button>
+        </form>
+
+        <!-- term & condition -->
+        <div class="flex justify-around items-center">
+          <h2 class="underline"><a href="">Term and Conditions</a></h2>
+          <h2 class="underline"><a href="">Cancellation Policy</a></h2>
         </div>
       </section>
+    </section>
     </main>
     <!-- main section close -->
     <!-- footer section start -->
     <footer class="p-28 bg-[#030712] text-white">
-        <section class="flex justify-between items-center">
+        <section class="flex flex-col lg:flex-row justify-between items-center">
           <div class="space-y-3">
             <h1 class="raleway-font text-4xl font-extrabold text-white">
               ASN-Ticket
@@ -424,7 +915,7 @@
           <div>
             <h1>@all rights reserved, ASN-Ticket services limited.2024</h1>
           </div>
-          <div class="flex justify-between items-center gap-6">
+          <div class="flex flex-col lg:fle-row justify-between items-center gap-6">
             <h1><a href="">Terms &amp; condition</a></h1>
             <h1><a href="">Return &amp; refund policy</a></h1>
             <h1><a href="">Privacy policy</a></h1>
@@ -433,5 +924,6 @@
       </footer>
     <!-- footer section close -->
     <script src="js/1st.js"></script>
+    <script src="js/utilitize.js"></script>
   </body>
 </html>
